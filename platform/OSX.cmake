@@ -30,7 +30,7 @@ CONFIGURE_FILE(
 
 IF(${BUILD_TESTS})
     ADD_CUSTOM_TARGET(dmg
-        "${QT_BIN_DIR}/macdeployqt" "${CMAKE_INSTALL_PREFIX}/bin/${VLCQT_TEST}.app" -dmg)
+        "${QT_BIN_DIR}/macdeployqt" "${CMAKE_INSTALL_FULL_BINDIR}/${VLCQT_TEST}.app" -dmg)
 ENDIF()
 
 FILE(GLOB Vlc_Libs ${LIBVLC_LIB_DIR}/*.dylib)
